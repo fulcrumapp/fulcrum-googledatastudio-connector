@@ -1,0 +1,19 @@
+{
+  "timeZone": "America/New_York",
+  "dependencies": {},
+  "exceptionLogging": "STACKDRIVER",
+  "dataStudio": {
+    "name": "Fulcrum",
+    "company": "Spatial Networks, Inc.",
+    "companyUrl": "https://www.fulcrumapp.com",
+    "logoUrl": "https://www.fulcrumapp.com/assets/img/icons/apple-touch-icon-72x72.png",
+    "addonUrl": "https://github.com/fulcrumapp/fulcrum-googledatastudio-connector",
+    "supportUrl": "https://github.com/fulcrumapp/fulcrum-googledatastudio-connector/issues",
+    "description": "Connect Google Data Studio with Fulcrum.",
+    "authType": ["KEY"],
+    "sources": ["FULCRUM"]
+  },
+  "urlFetchWhitelist": [
+    "https://api.fulcrumapp.com/"
+  ]
+}
