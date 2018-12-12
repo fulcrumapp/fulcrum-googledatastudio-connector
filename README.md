@@ -4,8 +4,8 @@ This [Google Data Studio](https://datastudio.google.com) [Community Connector](h
 
 ## Requirements
 
-* Active [Fulcrum account](https://www.fulcrumapp.com/) with Developer Pack enabled
-* Valid Fulcrum API Key (token) with access to your resources
+* Active [Fulcrum account](https://www.fulcrumapp.com/) with [Developer Pack](http://help.fulcrumapp.com/account/organization-plan/what-is-the-developer-pack) enabled
+* Valid Fulcrum [API Key](https://developer.fulcrumapp.com/api/intro/#authentication) (token) with access to your resources
 * Google account with access to [Google Data Studio](https://datastudio.google.com/)
 
 ## Try the Fulcrum Community Connector in Data Studio
