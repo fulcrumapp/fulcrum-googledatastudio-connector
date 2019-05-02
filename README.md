@@ -5,7 +5,7 @@ This [Google Data Studio](https://datastudio.google.com) [Community Connector](h
 ## Requirements
 
 * Active [Fulcrum account](https://www.fulcrumapp.com/) with [Developer Pack](http://help.fulcrumapp.com/account/organization-plan/what-is-the-developer-pack) enabled
-* Valid Fulcrum [API Key](https://developer.fulcrumapp.com/api/intro/#authentication) (token) with access to your resources
+* Valid Fulcrum [API Key](https://learn.fulcrumapp.com/dev/rest/intro#authentication) (token) with access to your resources
 * Google account with access to [Google Data Studio](https://datastudio.google.com/)
 
 ## Try the Fulcrum Community Connector in Data Studio
@@ -20,7 +20,7 @@ You can try out the managed deployment of the latest code using the following Co
 
 * Fulcrum records tables only include the reference IDs for members and projects. If you want to include member/project names, you will need to join to the `memberships` and `projects` tables to the records table.
 
-* Fulcrum media fields include the reference IDs for media files. If you want to link to these files directly without having to authenticate to your Fulcrum account, you can use the `FCM_Photo`, `FCM_Video`, `FCM_Audio`, `FCM_Signature` helper functions. Be sure to check out the other [helper functions](https://developer.fulcrumapp.com/query-api/reference/#fulcrum-sql-helper-functions) for formatting data and timestamps and remember that the Fulcrum Query API also supports most of the standard PostgreSQL & PostGIS functions.
+* Fulcrum media fields include the reference IDs for media files. If you want to link to these files directly without having to authenticate to your Fulcrum account, you can use the `FCM_Photo`, `FCM_Video`, `FCM_Audio`, `FCM_Signature` helper functions. Be sure to check out the other [helper functions](https://learn.fulcrumapp.com/dev/query/functions) for formatting data and timestamps and remember that the Fulcrum Query API also supports most of the standard PostgreSQL & PostGIS functions.
 
 ## Example Query
 
