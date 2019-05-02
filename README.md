@@ -1,6 +1,6 @@
 # Fulcrum Connector for Google Data Studio
 
-This [Google Data Studio](https://datastudio.google.com) [Connector](https://developers.google.com/datastudio/connector/) provides users with a direct connection to the data in their [Fulcrum](https://www.fulcrumapp.com/) account. This Connector uses the [Fulcrum Query API](https://developer.fulcrumapp.com/query-api/intro/) to create a data source link to your Fulcrum Organization. Fulcrum's Query API is part of the [Fulcrum Developer Pack](http://help.fulcrumapp.com/account/organization-plan/what-is-the-developer-package), which is included with Enterprise plans and available as an add-on for other plans.
+This [Google Data Studio](https://datastudio.google.com) [Connector](https://developers.google.com/datastudio/connector/) provides users with a direct connection to the data in their [Fulcrum](https://www.fulcrumapp.com/) account. This Connector uses the [Fulcrum Query API](https://learn.fulcrumapp.com/dev/query/intro) to create a data source link to your Fulcrum Organization. Fulcrum's Query API is part of the [Fulcrum Developer Pack](http://help.fulcrumapp.com/account/organization-plan/what-is-the-developer-package), which is included with Enterprise plans and available as an add-on for other plans.
 
 ## Requirements
 
