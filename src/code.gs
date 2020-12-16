@@ -3,8 +3,8 @@ function getToken() {
   return userProperties.getProperty('dscc.key');
 }
 
-function executeQuery(sql, token) {
-  var url = 'https://api.fulcrumapp.com/api/v2/query';
+function executeQuery(page, result, sql, token) {
+  var url = 'https://api.fulcrumapp.com/api/v2/query?per_page=10000&page=' + page;
 
   if (token == null) {
     token = getToken();
@@ -29,9 +29,28 @@ function executeQuery(sql, token) {
   var response = UrlFetchApp.fetch(url, params);
   var responseCode = response.getResponseCode();
   var responseText = response.getContentText();
+  var data = JSON.parse(responseText);
 
   if (responseCode === 200) {
-    return JSON.parse(responseText);
+    if (data.rows.length > 0){
+      if(result && result.rows){
+        data.rows.forEach(x => result.rows.push(x));
+        if(data.rows.length == 10000){
+          return executeQuery(page + 1, result, sql, token);
+        } else {
+          return result;
+        }
+      } else {
+        if(data.rows.length == 10000){
+          return executeQuery(page + 1, data, sql, token);
+        } else {
+          return data;
+        }
+      }
+    } else if(data && data.rows){
+      return data;
+    }
+    //return JSON.parse(responseText);
   } else {
     throw new Error('DS_USER:' + JSON.parse(responseText).error);
   }
@@ -143,7 +162,7 @@ function getSchema(request) {
 }
 
 function getData(request) {
-  var data = executeQuery(request.configParams.query);
+  var data = executeQuery(1, {}, request.configParams.query);
 
   var requestedIndexes = [];
 
