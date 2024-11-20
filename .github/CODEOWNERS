@@ -1,0 +1,4 @@
+# This code owners file is designed to be updated/configured based upon teams/code.
+# 
+# A full example is found on Githubs website: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners#example-of-a-codeowners-file
+* @fulcrumapp/car-web
